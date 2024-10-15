@@ -1,0 +1,17 @@
+[requires]
+doctest/2.4.11
+nlohmann_json/3.11.3
+spdlog/1.14.1
+yaml-cpp/0.8.0
+cpp-httplib/0.17.3
+fmt/10.2.1
+
+[options]
+*:shared=False
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout

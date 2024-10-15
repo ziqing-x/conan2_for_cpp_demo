@@ -1,0 +1,16 @@
+[Unit]
+	Description=mydemo service
+	After=network.target
+
+[Service]
+    Type=simple
+    Restart=on-failure
+    User=root
+    Group=root
+  	WorkingDirectory=/opt/@PKG_NAME@
+	Environment=LD_LIBRARY_PATH=$LD_LIBRARY_PATH:lib
+	ExecStart=/opt/@PKG_NAME@/bin/@APP_NAME@
+
+[Install]
+	WantedBy=multi-user.target
+

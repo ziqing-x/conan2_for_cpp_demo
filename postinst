@@ -1,0 +1,6 @@
+#!/bin/bash
+# deb 包安装后执行的脚本
+set -e
+systemctl daemon-reload
+systemctl enable mydemo.service
+exit 0

@@ -1,0 +1,7 @@
+logger:
+    log_name: "mydemo"
+    log_file_name: "./log/mydemo.log"
+    log_fize_size: 3145728                              # 1024 * 1024 * 3 = 3兆
+    log_rotation: 10                                    # 日志滚动个数为10个
+    log_flush: 2                                        # 2秒flush一次
+    log_pattern: "[%Y-%m-%d %H:%M:%S.%f] [%^%L%$] %v"   # 日志样式
